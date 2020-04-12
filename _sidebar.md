@@ -14,25 +14,29 @@
 
 
 -  Mainnet Operation For Developer 
+  - [Join MainNet](/zh-cn/join-minnet.md)
+  - [Join TestNet](/zh-cn/join-testnet.md)
+  - [Local Dev Noe ](/zh-cn/local-node-debug.md)
+  - [Node operations](/zh-cn/devops.md)
+  - [BTC recharge and Lock-Up Mining](/zh-cn/bitcoin-recharge-and-lock.md)
 
-  - [Configuration](configuration.md)
-  - [Themes](themes.md)
-  - [List of Plugins](plugins.md)
-  - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
+- ChainX JS-SDK开发文档
 
-- Guide
+  - quick start
+    - [install](/zh-cn/js-sdk/install.md)
+    - [introduction](/zh-cn/js-sdk/quick-start.md)
+  - Module
+    - [Account Module](/zh-cn/js-sdk/account.md)
+    - [Contract Module](/zh-cn/js-sdk/contract.md)
+    - [RPC Module](/zh-cn/js-sdk/rpc.md)
 
-  - [Deploy](deploy.md)
-  - [Helpers](helpers.md)
-  - [Vue compatibility](vue.md)
-  - [CDN](cdn.md)
-  - [Offline Mode(PWA)](pwa.md)
-  - [Server-Side Rendering(SSR)](ssr.md)
-  - [Embed Files](embed-files.md)
+- ChainX Contract
 
-- [Awesome docsify](awesome.md)
-- [Changelog](changelog.md)
+  - quick start
+    - [install ](/zh-cn/js-sdk/install.md)
+    - [introduction](/zh-cn/js-sdk/quick-start.md)
+  - develop
+    - [xrc20](/zh-cn/js-sdk/account.md)
+
 
 
