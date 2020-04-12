@@ -4,12 +4,12 @@
   - [资产系统](/zh-cn/asset-system.md)
   - [投票选举](/zh-cn/vote.md)
   - [跨链挖矿](/zh-cn/cross-miner.md)
-  - [币币交易](/zh-cn/coin-trading.md)
+  - [币币交易](/zh-cn/crypto-exchange.md)
   - [多签模块](/zh-cn/sign-module.md)
-  - [SDOT转接桥](/zh-cn/sdot-bridge.md)
-  - [Bitcoin转接桥](/zh-cn/bitcoin-bridge.md)
-  - [信托](/zh-cn/trust.md)
-  - [Bitcoin信托操作指南](/zh-cn/bitcoin-trust-operation.md)
+  - [SDOT 转接桥](/zh-cn/sdot-bridge.md)
+  - [Bitcoin 转接桥](/zh-cn/bitcoin-bridge.md)
+  - [Bitcoin 信托](/zh-cn/trust.md)
+  - [Bitcoin 信托操作指南](/zh-cn/bitcoin-trust-operation.md)
   - [手续费模型](/zh-cn/poundage.md)
 
 - 主网开发文档
@@ -29,3 +29,17 @@
     - [账户模块](/zh-cn/js-sdk/account.md)
     - [合约模块](/zh-cn/js-sdk/contract.md)
     - [RPC模块](/zh-cn/js-sdk/rpc.md)
+
+
+- ChainX 智能合约
+
+  - 快速开始
+    - [安装](/zh-cn/js-sdk/install.md)
+    - [入门](/zh-cn/js-sdk/quick-start.md)
+  - 模块
+    - [账户模块](/zh-cn/js-sdk/account.md)
+    - [合约模块](/zh-cn/js-sdk/contract.md)
+    - [RPC模块](/zh-cn/js-sdk/rpc.md)
+
+
+

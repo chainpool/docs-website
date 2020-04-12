@@ -4,12 +4,12 @@
   - [Asset System](/zh-en/asset-system.md)
   - [Vote And Election](/zh-en/vote.md)
   - [Cross-chain Miner](/zh-en/cross-miner.md)
-  - [Coin Trading](/zh-en/coin-trading.md)
+  - [Coin Trading](/zh-en/crypto-exchange.md)
   - [Multiple Sign Moudle](/zh-en/sign-module.md)
   - [SDOT bridge](/zh-en/sdot-bridge.md)
-  - [Bitcoin bridge](/zh-en/bitcoin-bridge.md)
-  - [Trust](/zh-en/trust.md)
-  - [Bitcoin Trust Operation ](/zh-en/bitcoin-trust-operation.md)
+  - [Bitcoin Bridge](/zh-en/bitcoin-bridge.md)
+  - [Bitcoin Trustee Nodes](/zh-en/bitcoin-trustee-node.md)
+  - [Bitcoin Trustee Nodes Operation ](/zh-en/bitcoin-trust-node-operation.md)
   - [Fee Module](/zh-en/poundage.md)
 
 
@@ -34,3 +34,5 @@
 
 - [Awesome docsify](awesome.md)
 - [Changelog](changelog.md)
+
+
