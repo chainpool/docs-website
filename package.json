@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "docsify serve .",
+    "deploy": "now -p"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.0",
+    "now": "^17.1.1"
+  }
+}

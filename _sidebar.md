@@ -20,7 +20,7 @@
   - [Node operations](/zh-cn/devops.md)
   - [BTC recharge and Lock-Up Mining](/zh-cn/bitcoin-recharge-and-lock.md)
 
-- ChainX JS-SDK开发文档
+- JS-SDK 
 
   - quick start
     - [install](/zh-cn/js-sdk/install.md)
