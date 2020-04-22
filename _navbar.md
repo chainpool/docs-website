@@ -11,4 +11,4 @@
 * developer
   * [js-sdk](/zh-en/js-sdk/quick-start.md)
   * [contrack](/zh-en/contract/1-introduce.md)
-  * [Run a local ChainX Node](/zh-en/run-a-chainx-node.md)
+  * [Run a local ChainX Node](/zh-en/run-a-Chainx-node.md)
