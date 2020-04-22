@@ -5,6 +5,6 @@
 
 > Official Documentation
 
-[MainNet](/join-minnet)
-[JS-SDK](/js-sdk/install)
-[Contract](/contract)
+[MainNet](/zh-en/join-minnet)
+[JS-SDK](/zh-en/js-sdk/install)
+[Contract](/zh-en/contract/1-introduce.md)
