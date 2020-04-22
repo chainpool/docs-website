@@ -4,12 +4,11 @@
   - [:cn: 中文](/zh-cn/)
 
 * quick start
-  * [Join Mainnet](zh-cn/join-minnet)
-  * [Join TestNet](zh-cn/join-testnet)
-  * [Wallet and Singer](zh-cn/custom-navbar.md)
-  * [devops](zh-cn/devops)
+  * [Join Mainnet](zh-en/join-minnet)
+  * [Join TestNet](zh-en/join-testnet)
+  * [devops](zh-en/devops)
 
 * developer
-  * [js-sdk](zh-cn/configuration.md)
-  * [contrack](zh-cn/themes.md)
-  * [local node debug](zh-cn/plugins.md)
+  * [js-sdk](zh-en/js-sdk/quick-start.md)
+  * [contrack](zh-en/contract/1-introduce.md)
+  * [Run a local ChainX Node](zh-en/run-a-chainx-node.md)
