@@ -18,8 +18,7 @@
   - [Join TestNet](/zh-en/join-testnet.md)
   - [Run A Local ChainX Node](/zh-en/run-a-Chainx-node.md)
   - [Run A Dokcer ChainX Node](/zh-en/run-a-Chainx-node.md)
-  - [Node operations](/zh-en/devops.md)
-  - [BTC recharge and Lock-Up Mining](/zh-en/bitcoin-recharge-and-lock.md)
+ 
 
 - JS-SDK 
     - [install](/zh-en/js-sdk/install.md)
