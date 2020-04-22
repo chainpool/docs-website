@@ -16,30 +16,29 @@
 
   - [加入主网](/zh-cn/join-minnet.md)
   - [加入测试网](/zh-cn/join-testnet.md)
-  - [本地调试节点](/zh-cn/local-node-debug.md)
+  - [运行本地节点](/zh-cn/run-a-chainx-node.md)
+  - [运行Docker节点](/zh-cn/devops.md)
   - [节点运维](/zh-cn/devops.md)
   - [BTC充值和锁仓挖矿](/zh-cn/bitcoin-recharge-and-lock.md)
 
 - ChainX JS-SDK开发文档
 
-  - 快速开始
     - [安装](/zh-cn/js-sdk/install.md)
     - [入门](/zh-cn/js-sdk/quick-start.md)
-  - 模块
     - [账户模块](/zh-cn/js-sdk/account.md)
     - [合约模块](/zh-cn/js-sdk/contract.md)
+    - [交易模块](/zh-cn/js-sdk/contract.md)
     - [RPC模块](/zh-cn/js-sdk/rpc.md)
 
 
 - ChainX 智能合约
 
   - 快速开始
-    - [安装](/zh-cn/js-sdk/install.md)
-    - [入门](/zh-cn/js-sdk/quick-start.md)
-  - 模块
-    - [账户模块](/zh-cn/js-sdk/account.md)
-    - [合约模块](/zh-cn/js-sdk/contract.md)
-    - [RPC模块](/zh-cn/js-sdk/rpc.md)
+    - [介绍](/zh-cn/contract/1-introduce.md)
+    - [安装](/zh-cn/contract/2-install.md)
+    - [合约创建](/zh-cn/contract/3-write-contract.md)
+    - [合约部署](/zh-cn/contract/4-deploy-contract.md)
+  - 最佳实践
 
-
+  - 教程资源
 

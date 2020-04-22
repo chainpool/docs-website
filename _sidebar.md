@@ -14,29 +14,27 @@
 
 
 -  Mainnet Operation For Developer 
-  - [Join MainNet](/zh-cn/join-minnet.md)
-  - [Join TestNet](/zh-cn/join-testnet.md)
-  - [Local Dev Noe ](/zh-cn/local-node-debug.md)
-  - [Node operations](/zh-cn/devops.md)
-  - [BTC recharge and Lock-Up Mining](/zh-cn/bitcoin-recharge-and-lock.md)
+  - [Join MainNet](/zh-en/join-minnet.md)
+  - [Join TestNet](/zh-en/join-testnet.md)
+  - [Run A Local ChainX Node](/zh-en/run-a-Chainx-node.md)
+  - [Run A Dokcer ChainX Node](/zh-en/run-a-Chainx-node.md)
+  - [Node operations](/zh-en/devops.md)
+  - [BTC recharge and Lock-Up Mining](/zh-en/bitcoin-recharge-and-lock.md)
 
 - JS-SDK 
-
-  - quick start
-    - [install](/zh-cn/js-sdk/install.md)
-    - [introduction](/zh-cn/js-sdk/quick-start.md)
-  - Module
-    - [Account Module](/zh-cn/js-sdk/account.md)
-    - [Contract Module](/zh-cn/js-sdk/contract.md)
-    - [RPC Module](/zh-cn/js-sdk/rpc.md)
+    - [install](/zh-en/js-sdk/install.md)
+    - [introduction](/zh-en/js-sdk/quick-start.md)
+    - [Account Module](/zh-en/js-sdk/account.md)
+    - [Contract Module](/zh-en/js-sdk/contract.md)
+    - [Transaction Module](/zh-en/js-sdk/transaction.md)
+    - [RPC Module](/zh-en/js-sdk/rpc.md)
 
 - ChainX Contract
-
   - quick start
-    - [install ](/zh-cn/js-sdk/install.md)
-    - [introduction](/zh-cn/js-sdk/quick-start.md)
-  - develop
-    - [xrc20](/zh-cn/js-sdk/account.md)
+    - [introduce](/zh-en/contract/1-introduce.md)
+    - [install](/zh-en/contract/2-install.md)
+    - [create smart contract](/zh-en/contract/3-write-contract.md)
+    - [deploy smart contract](/zh-en/contract/4-deploy-contract.md)
 
 
 
