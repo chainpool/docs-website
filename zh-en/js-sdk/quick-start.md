@@ -59,7 +59,7 @@ const Chainx = require('chainx.js').default;
 })();
 ```
 
-## 离线签名 websocket 版本
+## offline websocket 
 
 ```javascript
 const Chainx = require('chainx.js').default;
@@ -109,7 +109,7 @@ async function ed25519Sign(message) {
 })();
 ```
 
-## 离线签名 http 版本
+## offline http 
 
 ```javascript
 const { ApiBase, HttpProvider } = require('chainx.js');
