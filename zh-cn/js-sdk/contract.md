@@ -1,8 +1,7 @@
 # 智能合约
 
-## 交易
 
-### chainx.api.tx.xContracts.putCode(gasLimit, code)
+## chainx.api.tx.xContracts.putCode(gasLimit, code)
 将给定的二进制 Wasm 代码存储到链上，同时可以获取它的 codeHash。只能通过已存储的代码实例化合约。
 
 ```js
@@ -23,7 +22,7 @@ ex.signAndSend(Test, (error, result) => {
 
 ```
 
-### chainx.api.tx.xContracts.instantiate(endowment, gasLimit, codeHash， data)
+## chainx.api.tx.xContracts.instantiate(endowment, gasLimit, codeHash， data)
 
 chainx.api.tx.xContracts.instantiate(endowment, gasLimit, codeHash， data)
 
@@ -52,7 +51,7 @@ ex.signAndSend(Test, (error, result) => {
 });
 ```
 
-### chainx.api.tx.xContracts.call(dest, value, gasLimit, data)
+## chainx.api.tx.xContracts.call(dest, value, gasLimit, data)
 
 调用合约，同时也可以传输一些余额。
 
@@ -73,7 +72,7 @@ ex.signAndSend(Alice, (error, result) => {
 
 ```
 
-### chainx.api.tx.xContracts.convertToXrc20(token, value, gasLimit)
+## chainx.api.tx.xContracts.convertToXrc20(token, value, gasLimit)
 
 ```js
 const ex = chainx.api.tx.xContracts.convertToXrc20(
@@ -88,7 +87,7 @@ ex.signAndSend(Alice, (error, result) => {
 ```
 
 
-### chainx.chain.convertToAsset(token, balance, value, gas)
+## chainx.chain.convertToAsset(token, balance, value, gas)
 
 将 xrc 资产转化为余额
 

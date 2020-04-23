@@ -1,8 +1,7 @@
-# smart contract
 
-## transaction
+# contract
 
-### chainx.api.tx.xContracts.putCode(gasLimit, code)
+## chainx.api.tx.xContracts.putCode(gasLimit, code)
 Store the given binary Wasm code on the chain, and get its codeHash at the same time. The contract can only be instantiated through the stored code.
 
 ```js
@@ -23,7 +22,7 @@ ex.signAndSend(Test, (error, result) => {
 
 ```
 
-### chainx.api.tx.xContracts.instantiate(endowment, gasLimit, codeHash， data)
+## chainx.api.tx.xContracts.instantiate(endowment, gasLimit, codeHash， data)
 
 chainx.api.tx.xContracts.instantiate(endowment, gasLimit, codeHash， data)
 
@@ -52,7 +51,7 @@ ex.signAndSend(Test, (error, result) => {
 });
 ```
 
-### chainx.api.tx.xContracts.call(dest, value, gasLimit, data)
+## chainx.api.tx.xContracts.call(dest, value, gasLimit, data)
 
 Call the contract and also transfer some balance.
 
@@ -72,7 +71,7 @@ ex.signAndSend(Alice, (error, result) => {
 
 ```
 
-### chainx.api.tx.xContracts.convertToXrc20(token, value, gasLimit)
+## chainx.api.tx.xContracts.convertToXrc20(token, value, gasLimit)
 
 ```js
 const ex = chainx.api.tx.xContracts.convertToXrc20(
@@ -87,7 +86,7 @@ ex.signAndSend(Alice, (error, result) => {
 ```
 
 
-### chainx.chain.convertToAsset(token, balance, value, gas)
+## chainx.chain.convertToAsset(token, balance, value, gas)
 
 Convert xrc assets to balance
 

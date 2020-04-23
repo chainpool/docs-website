@@ -1,6 +1,6 @@
-## Deploying Your Contract
+# Deploying Your Contract
 
-### Install the plugin
+## Install the plugin
 
 Click [Chainx Extension](https://chrome.google.com/webstore/detail/chainx-extension/dffjlgnecfafjfmkknpipapcbgajflge) to install the plugin.
 
@@ -20,7 +20,7 @@ After the installation is complete:
 3. If you select "Import Wallet", there is an option to directly import the private key in the upper right corner of the mnemonic page.
 
 
-### Deployment and debug
+## Deployment and debug
 
 The whole process is mainly divided into 3 steps:
 
@@ -30,7 +30,7 @@ The whole process is mainly divided into 3 steps:
 
 All steps can be performed by UI (https://dapps.chainx.org.cn/), or by JS-SDK script.
 
-#### 1. Upload Contract
+### 1. Upload Contract
 
 
 1. Open [Chainx Wallet](https://dapps.chainx.org.cn/) and switch to "Contract" page and "Contract Code" tab:
@@ -51,7 +51,7 @@ All steps can be performed by UI (https://dapps.chainx.org.cn/), or by JS-SDK sc
 
 ![image-20191114160022577](../../_media/contract/image-20191114151322439.png '')
 
-#### 2. Instantiate of the contract
+### 2. Instantiate of the contract
 
 In the previous step about uploading of the contract, we simply stored the contract code on the chain and did not have any functions that can be called, so we need to instantiate this contract.
 
@@ -67,7 +67,7 @@ After calling up the plugin, enter the password account and confirm the signatur
 
 * If the contract is already deployed, click the "Add existing contract" button to add an existing contract. Please note that when adding an existing contract, you need to provide the contract's `abi.json`. If you provide the wrong abi, it will cause a selector error when calling, and the corresponding function cannot be called.
 
-#### 3.  Call contract functions
+### 3.  Call contract functions
 
 
 ![image-20191114160022577](../../_media/contract/image-20191114155829408.png '')

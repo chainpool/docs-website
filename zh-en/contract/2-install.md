@@ -1,5 +1,6 @@
+# Contract Prerequisites
 
-### Environmental preparation
+## Environmental preparation
 Note: At present, the smart contract switch is closed on the main network, and the smart contract will be released after the Polka main network is launched, so it is necessary to build a test network node locally for contract development.
 
 ### Install Test Node
