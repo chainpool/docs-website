@@ -35,5 +35,14 @@
     - [create smart contract](/zh-en/contract/3-write-contract.md)
     - [deploy smart contract](/zh-en/contract/4-deploy-contract.md)
 
+  - Basic Tutorial
+    - [合约模板](/zh-cn/contract/1-Contract-template.md)
+    - [数据类型](/zh-cn/contract/2-Contract-variable.md)
+    
+  - Best Practices
+    - [xrc20合约](/zh-cn/contract/1-xrc20-intoduce.md)
+    - [pns合约](/zh-cn/contract/2-pns.md)
+
+
 
 
