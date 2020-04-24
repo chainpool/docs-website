@@ -39,6 +39,7 @@
     - [合约创建](/zh-cn/contract/3-write-contract.md)
     - [合约部署](/zh-cn/contract/4-deploy-contract.md)
   - 基础教程
+    - [ChainX ink!](/zh-cn/contract/basic/0-chainX-ink.md)
     - [合约模板](/zh-cn/contract/basic/1-Contract-template.md)
     - [数据类型](/zh-cn/contract/basic/2-Contract-variable.md)
   - 最佳实践
