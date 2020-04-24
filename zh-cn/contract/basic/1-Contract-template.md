@@ -13,10 +13,11 @@ Substrate包括合约模块，其中包括智能合约链所需的核心逻辑�
 ## 创建一个智能合约模板
 
 * 使用Docker创建
+
 ```bash
 docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 cargo contract new flipper
-
 ```
+
 * 使用本地安装的cargo创建
 
 ```bash
@@ -34,76 +35,48 @@ flipper
 ```
 其中Cargo.toml是项目相关依赖配置，合约的逻辑在lib.rs文件中:
 
-```rust
-#![cfg_attr(not(feature = "std"), no_std)]
 
+## 智能合约架构
+
+构造一个ink智能合约类似于solidity智能合约，其中我们期望的solidity的主要组成部分在ink中也是一致的：合同变量、事件、公共函数和私有函数，以及获取调用方地址的环境变量等等。
+
+下面是Erc20合约是如何构造的抽象：
+
+```rust
+// 导入ink模块
 use ink_lang as ink;
 
-#[ink::contract(version = "0.1.0", env = DefaultXrmlTypes)]
-mod flipper {
-    use ink_core::storage;
-    #[ink(storage)]
-    struct Flipper {
-        value: storage::Value<bool>,
+mod erc20{
+    // declare modules
+    use ink_core::{
+        env::{chainx_calls, chainx_types::Call, DefaultXrmlTypes},
+        storage,
+    };
+    ...
+
+    //define events
+    #[ink(event)]
+    struct Transfer {
+        ...
     }
 
-    impl Flipper {
-        #[ink(constructor)]
-        fn new(&mut self, init_value: bool) {
-            self.value.set(init_value);
-        }
-        #[ink(constructor)]
-        fn default(&mut self) {
-            self.new(false)
-        }
-
-        #[ink(message)]
-        fn flip(&mut self) {
-            *self.value = !self.get();
-        }
-
-        #[ink(message)]
-        fn get(&self) -> bool {
-            *self.value
-        }
+    // contract variables as a struct
+    struct erc20 {
+      owner: storage::Value<AccountId>,
+      ...
     }
-    #[cfg(test)]
-    mod tests {
-        use super::*;
 
-        #[test]
-        fn default_works() {
-            let flipper = Flipper::default();
-            assert_eq!(flipper.get(), false);
-        }
-        #[test]
-        fn it_works() {
-            let mut flipper = Flipper::new(false);
-            assert_eq!(flipper.get(), false);
-            flipper.flip();
-            assert_eq!(flipper.get(), true);
-        }
-    }
+    // compulsory deploy method that is run upon the initial contract instantiation
+    fn new(&mut self, init_value: u64){}
+    
+    // public contract methods in an impl{} block with macro #[ink(message)]
+    impl NFToken {
+      #[ink(message)]
+      fn total_supply(&self) -> u64 {}
+      // private contract methods without macro #[ink(message)]
+      fn transfer_impl() ->bool {}
+      ...
+   }
 }
 
 ```
-
-## 模块声明
-
-Ink不依赖于Rust标准库 - 而是导入Ink模块来编写合同逻辑。 
-```rust
-use ink_lang as ink;
-use ink_core::storage;
-
-```
-这里公开智能合约中需要使用哪些模块，导入storage模块。
-
-您还会注意到在模块声明之前，有以下内容：
-
-```rust
-#![cfg_attr(not(feature = "std"), no_std)]
-```
-如果我们在代码中使用std功能标志，则该行声明我们正在使用标准库。 否则合同将始终使用no_std进行编译。 Ink合约不使用Rust标准库，因此除非我们明确定义它，否则它将从编译中省略。
-
-
-

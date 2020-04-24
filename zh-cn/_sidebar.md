@@ -42,7 +42,7 @@
     - [合约模板](/zh-cn/contract/basic/1-Contract-template.md)
     - [数据类型](/zh-cn/contract/basic/2-Contract-variable.md)
   - 最佳实践
-    - [xrc20合约](/zh-cn/contract/best-practices/1-xrc20-intoduce.md)
-    - [pns合约](/zh-cn/contract/best-practices/2-pns.md)
+    - [XRC20合约](/zh-cn/contract/best-practices/1-xrc20-intoduce.md)
+    - [PNS合约](/zh-cn/contract/best-practices/2-pns.md)
 
 

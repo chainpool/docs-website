@@ -11,17 +11,8 @@ PNS（Polkadot Name Service） 是一个建立在 Polkadot 上的域名系统，
 
 除了基础的域名解析服务，PNS还提供了安全可靠的域名注册、拍卖、转让以及交易等功能。
 
-## 域名注册
-
-PNS（Polkadot Name Service） 是一个建立在 Polkadot 上的域名系统，它的主要功能是域名解析，即将一个例如 “polka.dot” 这样一个可读性和可记忆性都非常好的字符串翻译成 Polkadot 上一长串无实际意义的地址。
-
-这样我们就可以在转账、投票以及一些 dapp 操作中使用像 “polka.dot” 这样简单易懂的『域名』而不是冗长难记的『地址』。就好像现实生活中我们我们访问网站使用的是例如 “google.com” 的『域名』，而不是谷歌机房的 ip 地址。
-
-将 “google.com” 翻译成谷歌主机 ip 的服务就是 DNS（Domain Name Service），而目前全球的 IPV4 根域名服务器只有13台，其中9台在美国，2台在欧洲，1台在亚洲，如此中心化的分布也导致了互联网上有一个说法：攻击整个因特网最有力、最直接，也是最致命的方法恐怕就是攻击根域名服务器了。
-
-而相比于 DNS，PNS 由于直接架构在 Polkadot 上，因此天然的拥有去中心化的特点，所以传统的攻击根域名服务器的方法自然无法奏效。
-
-除了基础的域名解析服务，PNS还提供了安全可靠的域名注册、拍卖、转让以及交易等功能。
+## 域名驻车
+![image-domain](../../../_media/contract/domain.png '')
 
 ### 域名长度
 
@@ -348,3 +339,6 @@ $ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 c
 
 运行成功之后 target 目录下会出现相应的 wasm 和 json 文件。
 
+## 项目地址
+
+https://github.com/chainpool/simple_pns
