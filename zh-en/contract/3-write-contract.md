@@ -19,13 +19,13 @@ $ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 c
 Compile WASM contract file:
 
 ```bash
-$ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 cargo contract build
+$ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 cargo +nightly contract build
 ```
 
 Generate contract metadata, which is the contract ABI:
 
 ```bash
-$ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 cargo contract generate-metadata
+$ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 cargo  +nightly contract generate-metadata
 ```
 
 A `metadata.json` file will be generated under the` target / `directory, which contains the necessary information to interact with the contract.
