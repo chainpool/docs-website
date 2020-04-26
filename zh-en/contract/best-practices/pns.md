@@ -335,5 +335,5 @@ $ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 c
 After a successful run, the corresponding wasm and json files appear in the target directory.
 
 
-## 项目地址
+## Project Address
 https://github.com/chainpool/simple_pns

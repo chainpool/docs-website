@@ -334,6 +334,6 @@ $ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 c
 Your abi is ready. You can find it here:
 /build/target/metadata.json
 
-## 项目地址
+## Project Address
 
 https://github.com/chainx-org/xrc20
