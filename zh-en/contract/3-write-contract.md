@@ -1,8 +1,6 @@
 # create ChainX ink！smart contract project
 
-In basic usage, `chainx-org/cargo-contract` and   `paritytech/cargo-contract` are same，the differenct between `chainx-org/cargo-contract` used customized [`chainx-org/ink` branch ink2.0](https://github.com/chainx-org/ink/tree/ink2.0), 
-Instead of `paritytech/ink`.
-
+In basic usage, `chainx-org/cargo-contract` and   `paritytech/cargo-contract` are same.
 Create a flipper example project:
 
 ```bash
