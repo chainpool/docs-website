@@ -295,9 +295,9 @@ First enter the node details page of the blockchain browser, click on the block 
 
 ![image](https://user-images.githubusercontent.com/8850248/57750530-38a70800-7715-11e9-969a-a7277739be6f.png)
 
-其他节点运维相关见：[ChainX 节点运维](devops)
+Node operation and maintenance as follows：[ChainX Node ](https://github.com/chainx-org/ChainX/wiki/devops)
 
-### 4. 出块节点正常运行后其他工作
+### 4. Other Works
 
 After confirming that the block node runs successfully, if the node is in the deselected state, you need to click Update Node on the voting page to make the node enter the candidate state:
 

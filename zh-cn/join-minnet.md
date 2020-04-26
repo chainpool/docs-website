@@ -332,7 +332,7 @@ nohup ./chainx --config=$(pwd)/config.json > error.log 2>&1 &
 
 ![image](https://user-images.githubusercontent.com/8850248/57750530-38a70800-7715-11e9-969a-a7277739be6f.png)
 
-其他节点运维相关见：[ChainX 节点运维](devops)
+其他节点运维相关见：[ChainX 节点运维](https://github.com/chainx-org/ChainX/wiki/devops)
 
 ## 4. 出块节点正常运行后其他工作
 
