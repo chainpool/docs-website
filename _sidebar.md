@@ -37,7 +37,7 @@
 
   - Basic Tutorial
     - [Chainx Ink!](/zh-en/contract/basic/0-chainX-ink.md)
-    - [Contract Template](/zh-cn/contract/basic/1-Contract-template.md)
+    - [Contract Template](/zh-en/contract/basic/1-Contract-template.md)
     - [Data Type](/zh-cn/contract/basic/2-Contract-variable.md)
     
   - Best Practices
