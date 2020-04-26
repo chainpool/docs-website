@@ -6,7 +6,7 @@
 * quick start
   * [Join Mainnet](/zh-en/join-minnet)
   * [Join TestNet](/zh-en/join-testnet)
-  * [devops](/zh-en/devops)
+  * [devops](https://github.com/chainx-org/ChainX/wiki/devops)
 
 * developer
   * [js-sdk](/zh-en/js-sdk/quick-start.md)
