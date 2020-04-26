@@ -10,5 +10,5 @@ The ChainX smart contract platform is implemented by integrating Substrate's con
 * The association type Balance was changed from u128 to u64.
 * Adapting the association type Call to support PCX transfers and converting XRC20 Tokens to ChainX inter-chain assets. The contract developers can design their own Dapps based on PCX and ChainX’s inter-chain assets.
 
-Except the two changes, other contract writing methods are in line with paritytech/ink. Currently contracts are still written in ink1.0 which will be upgraded to ink2.0.
+Except the two changes, other contract writing methods are in line with paritytech/ink.
 
