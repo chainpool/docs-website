@@ -7,4 +7,4 @@
 
 [主网](/zh-cn/join-minnet)
 [JS-SDK](/zh-cn/js-sdk/install)
-[合约](/zh-cn/contract)
+[合约](/zh-cn/contract/1-introduce)
