@@ -8,6 +8,7 @@
   - [多签模块](/zh-cn/sign-module.md)
   - [SDOT 转接桥](/zh-cn/sdot-bridge.md)
   - [Bitcoin 转接桥](/zh-cn/bitcoin-bridge.md)
+  - [Bitcoin 转接桥业务逻辑](/zh-cn/bitcoin-bridge-business.md)
   - [Bitcoin 信托](/zh-cn/trust.md)
   - [Bitcoin 信托操作指南](/zh-cn/bitcoin-trust-operation.md)
   - [手续费模型](/zh-cn/poundage.md)

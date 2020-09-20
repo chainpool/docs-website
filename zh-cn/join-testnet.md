@@ -1,5 +1,3 @@
-:tada::tada: [>>>> 加入ChainX测试网 <<<<](Join-ChainX-Mainnet) :tada::tada:
-
 # 加入ChainX测试网
 
 [English Version](https://github.com/chainx-org/ChainX/wiki/Join-ChainX-Testnet-EN)
@@ -72,3 +70,14 @@ ChainX当前提供了几个测试网节点（老钱包可连）：
 
 * https://testnet.api.chainx.org.cn/
 
+-------------
+
+#### 内部新测试网
+
+- 47.114.131.193
+  - RPC: 8086, 8186
+  - WS: 8087, 8187
+
+- 47.114.150.67
+  - RPC: 8086, 8186
+  - WS: 8087, 8187

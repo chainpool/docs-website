@@ -1,6 +1,4 @@
-:tada::tada: [>>>> 加入ChainX主网 <<<<](Join-ChainX-Mainnet) :tada::tada:
-
-# 加入 ChainX 主网
+## 加入 ChainX 主网
 
 <!-- TOC GFM -->
 
@@ -30,7 +28,7 @@
 
 ----------
 
-## 0. 基础
+### 0. 基础
 
 ChainX为PoS区块链，具备staking的基础特征。
 
@@ -57,16 +55,16 @@ ChainX为PoS区块链，具备staking的基础特征。
 
    物理节点与链上节点通过启动物理节点的配置`validator-name`进行挂钩，而是否具备正常的出块权通过链上节点参选时注册的出块公钥与启动物理节点配置中的`keystore`相关信息进行挂钩
 
-## 1. 下载节点运行程序
+### 1. 下载节点运行程序
 
 我们提供了以下两种途径:
 
 - 在 https://github.com/chainx-org/ChainX/releases 下载 最新版本的 ChainX 二进制 `chainx`，目前仅支持 Ubuntu 16.04+ 或 macOS。
 - 如果是其他系统，可采用 [Docker 运行 ChainX 节点](Docker)。
 
-## 2. 启动节点前准备
+### 2. 启动节点前准备
 
-### 删除老旧测试网节点
+#### 删除老旧测试网节点
 
 ChainX 主网已经于 2019 年 5 月 25 日正式启动，如果之前有运行过测试网节点，请先删除所有测试网数据：
 
@@ -86,7 +84,7 @@ ChainX 主网已经于 2019 年 5 月 25 日正式启动，如果之前有运行
         $ rm -rf $HOME/Library/Application\ Support/ChainX
         ```
 
-### 准备节点启动配置文件
+#### 准备节点启动配置文件
 
 当前ChainX已经提供了**从配置文件读取参数启动节点**的方式，完整的启动参数可参见 `chainx --help`:
 
@@ -139,7 +137,7 @@ $ ls
 └── config.json
 ```
 
-## 3. 启动节点
+### 3. 启动节点
 
 对于有意愿当验证人的节点，我们强烈建议至少运行两个节点，即一个同步节点和一个验证者节点。这样即使当验证者节点出现问题时，也可以随时将备用的同步节点切换为出块节点，避免因为没有按时出块导致节点被惩罚。
 
@@ -155,7 +153,7 @@ $ curl https://gist.githubusercontent.com/liuchengxu/3b3ed4ce027e39fc89b5a5a6c28
 
 - 自v1.0.2版本起，`chainx`默认并没有将输出信息在终端进行打印，而是存储在`chainx`同级目录下的 `log/chainx.log`, 详情可通过`chainx --help` 查看 `--log*` 等相关选项。
 
-### 1. 启动同步节点
+#### 1. 启动同步节点
 
 对于同步节点的启动，我们推荐以下配置：
 
@@ -176,6 +174,7 @@ $ curl https://gist.githubusercontent.com/liuchengxu/3b3ed4ce027e39fc89b5a5a6c28
     "pruning": "archive",  // 目前强烈建议加上该配置，以存档模式启动
     "db-cache": 1024,  // 设置节点数据库的缓存，单位MB，即这里为1GB，可根据自己机器配置情况调整
     "state-cache-size": 2147483648, // 设置节点状态树缓存，单位B，即这里为2GB (2GB = 2 * 1024 * 1024)，可根据自己机器配置情况调整
+    "no-mdns": true,  // 关闭libp2p自动在local network的自动发现
     "bootnodes": [
         // 填写引导节点，ChainX已经内置了一些种子节点，一般无需填写
     ]
@@ -211,15 +210,15 @@ nohup ./chainx --config=$(pwd)/config.json > error.log 2>&1 &
 
 待同步节点同步到最新高度后，即可参考下一节内容，暂停同步节点并修改同步节点的启动配置文件，添加 `validator`, `validator-name` 等参数，再次启动节点进入验证人模式。
 
-### 2. 启动验证者节点
+#### 2. 启动验证者节点
 
-#### 1. 节点账户公钥生成与注册
+##### 1. 节点账户公钥生成与注册
 
 1. 如果还没有账户，请先到钱包 https:://wallet.chainx.org 点击创建账户，生成节点账户，**账户地址**形如 `5HbT8...S9yg`。
 2. 在钱包投票选举页(新版钱包在资产信托页)，点击注册节点，设置 **节点名称**，比如 NodeABC，注意：该节点名为即后面启动文件要用到的 `validator-name` 字段。
 3. 在投票选举页的候选节点里，可以看到你的节点处于 **退选** 状态。此时需要
 
-#### 2. 生成出块公钥
+##### 2. 生成出块公钥
 
 如果还不了解节点账户公钥和出块公钥的区别，请[点击这里](https://github.com/chainx-org/ChainX/wiki/%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5#%E8%8A%82%E7%82%B9%E8%B4%A6%E6%88%B7%E5%85%AC%E9%92%A5%E5%92%8C%E5%87%BA%E5%9D%97%E5%85%AC%E9%92%A5)。以下内容均认为读者已经了解了账户公钥和出块公钥的区别。
 
@@ -260,7 +259,7 @@ Repeat again:
 
  ![image](https://user-images.githubusercontent.com/8850248/57749106-4fe2f700-770f-11e9-93e1-50921b6b769c.png)
 
-#### 3. 修改启动配置文件启动验证者出块节点
+##### 3. 修改启动配置文件启动验证者出块节点
 
 对于验证者节点，我们建议如下配置：
 
@@ -279,6 +278,7 @@ Repeat again:
   "pruning": "archive",  // 目前强烈建议加上该配置，以存档模式启动
   "db-cache": 1024,  // 设置节点数据库的缓存，单位MB，即这里为1GB
   "state-cache-size": 2147483648, // 设置节点状态树缓存，单位B，即这里为2GB (2GB = 2 * 1024 * 1024)
+  "no-mdns": true, 
   "bootnodes": [],
   "name": "Your-Node-Name",             // 在节点浏览器中显示的节点名
   "validator-name": "Your-Validator-Name", // 注册节点时使用的名称
@@ -320,9 +320,9 @@ nohup ./chainx --config=$(pwd)/config.json > error.log 2>&1 &
 
 **请保证上面日志里的公钥为出块地址公钥（session_key），若不是，会导致后续无法出块**
 
-##### 如何更新出块地址
+###### 如何更新出块地址
 
-在钱包投票选举页，点击更新节点，在出块地址处填写第一步中得到的出块地址公钥(session_key)，注意这里既可以直接填写公钥，也可以填写从（可选）步骤中获取的地址:
+在老版本桌面钱包或者[在线钱包](https://dapps.chainx.org.cn/staking)投票选举页(新版本的桌面钱包在资产信托页)，点击更新节点，在出块地址处填写第一步中得到的出块地址公钥(session_key)，注意这里既可以直接填写公钥，也可以填写从（可选）步骤中获取的地址:
 
 ![image](https://user-images.githubusercontent.com/8850248/57748969-bfa4b200-770e-11e9-843f-c841f3b887e6.png)
 
@@ -332,9 +332,9 @@ nohup ./chainx --config=$(pwd)/config.json > error.log 2>&1 &
 
 ![image](https://user-images.githubusercontent.com/8850248/57750530-38a70800-7715-11e9-969a-a7277739be6f.png)
 
-其他节点运维相关见：[ChainX 节点运维](https://github.com/chainx-org/ChainX/wiki/devops)
+其他节点运维相关见：[ChainX 节点运维](devops)
 
-## 4. 出块节点正常运行后其他工作
+### 4. 出块节点正常运行后其他工作
 
 确认出块节点成功运行后，如果节点处于退选状态，则需要在投票选举页点击更新节点，使节点进入参选状态:
 
